@@ -111,14 +111,14 @@
             key-positions = <18 19>;
             bindings = <&kp RET>;
         };
-        combo_RCTRL{
-            timeout-ms = <150>;
-            key-positions = <30 31>;
-            bindings = <&kp LCTRL>;
-        };
         combo_LCTRL{
             timeout-ms = <150>;
-            key-positions = <38 39>;
+            key-positions = <20 21>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_RCTRL{
+            timeout-ms = <150>;
+            key-positions = <28 29>;
             bindings = <&kp RCTRL>;
         };
     };
