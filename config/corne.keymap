@@ -92,7 +92,7 @@
             timeout-ms = <150>;
             key-positions = <18 19>;
             bindings = <&kp RET>;
-        }
+        };
         combo_RCTRL{
             timeout-ms = <150>;
             key-positions = <30 31>;
