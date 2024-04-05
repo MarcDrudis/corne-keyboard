@@ -43,7 +43,7 @@
 //                          └──────────┴────────┴───────────┘   └───────────┴────────┴────────────┘                               
       _AS(Q)   _AS(W)   _AS(E)     _AS(R)   _AS(T)          _AS(Y)      _AS(U)   _AS(I)       _AS(O)     _AS(P)           
       _AS(A)   _AS(S)   _AS(D)     _AS(F)   _AS(G)          _AS(H)      _AS(J)   _AS(K)       _AS(L)     _AS(SQT)         
-      _AS(Z)   _AS(X)   _AS(C)     _AS(V)   _AS(B)          _AS(N)      _AS(M)   _AS(COMMA)   _AS(DOT)   _AS(FORWARDSLASH)
+      _AS(Z)   _AS(X)   _AS(C)     _AS(V)   _AS(B)          _AS(N)      _AS(M)   _AS(COMMA)   _AS(DOT)   _AS(SLASH)
                         &kp LALT   &mo 1    &kp SPACE       &kp SPACE   &mo 2    &kp                                      
                         >;
                 };
