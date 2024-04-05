@@ -32,41 +32,40 @@
                 default_layer {
                         display-name = "Base";
                         bindings = <
-//        ┌────────┬────────┬──────────┬────────┬───────────┐   ┌───────────┬────────┬────────────┬──────────┬────────────┐
-//        │ _AS(Q) │ _AS(W) │  _AS(E)  │ _AS(R) │  _AS(T)   │   │  _AS(Y)   │ _AS(U) │   _AS(I)   │  _AS(O)  │   _AS(P)   │
-//        ├────────┼────────┼──────────┼────────┼───────────┤   ├───────────┼────────┼────────────┼──────────┼────────────┤
-//        │ _AS(A) │ _AS(S) │  _AS(D)  │ _AS(F) │  _AS(G)   │   │  _AS(H)   │ _AS(J) │   _AS(K)   │  _AS(L)  │  _AS(SQT)  │
-//        ├────────┼────────┼──────────┼────────┼───────────┤   ├───────────┼────────┼────────────┼──────────┼────────────┤
-//        │ _AS(Z) │ _AS(X) │  _AS(C)  │ _AS(V) │  _AS(B)   │   │  _AS(N)   │ _AS(M) │ _AS(COMMA) │ _AS(DOT) │ _AS(SLASH) │
-//        └────────┴────────┼──────────┼────────┼───────────┤   ├───────────┼────────┼────────────┼──────────┴────────────┘
-//                          │ &kp LALT │ &mo 1  │ &kp SPACE │   │ &kp SPACE │ &mo 2  │ &kp SHIFT  │                        
-//                          └──────────┴────────┴───────────┘   └───────────┴────────┴────────────┘                        
-      _AS(Q)   _AS(W)   _AS(E)     _AS(R)   _AS(T)          _AS(Y)      _AS(U)   _AS(I)       _AS(O)     _AS(P)    
-      _AS(A)   _AS(S)   _AS(D)     _AS(F)   _AS(G)          _AS(H)      _AS(J)   _AS(K)       _AS(L)     _AS(SQT)  
-      _AS(Z)   _AS(X)   _AS(C)     _AS(V)   _AS(B)          _AS(N)      _AS(M)  &trans &trans &trans 
-                        &kp LALT   &mo 1    &kp SPACE       &kp SPACE   &mo 2    &kp RSHIFT                         
+//        ┌────────┬────────┬──────────┬────────┬───────────┐   ┌───────────┬────────┬────────────┬────────┬──────────┐
+//        │ _AS(Q) │ _AS(W) │  _AS(E)  │ _AS(R) │  _AS(T)   │   │  _AS(Y)   │ _AS(U) │   _AS(I)   │ _AS(O) │  _AS(P)  │
+//        ├────────┼────────┼──────────┼────────┼───────────┤   ├───────────┼────────┼────────────┼────────┼──────────┤
+//        │ _AS(A) │ _AS(S) │  _AS(D)  │ _AS(F) │  _AS(G)   │   │  _AS(H)   │ _AS(J) │   _AS(K)   │ _AS(L) │ _AS(SQT) │
+//        ├────────┼────────┼──────────┼────────┼───────────┤   ├───────────┼────────┼────────────┼────────┼──────────┤
+//        │ _AS(Z) │ _AS(X) │  _AS(C)  │ _AS(V) │  _AS(B)   │   │  _AS(N)   │ _AS(M) │   &trans   │ &trans │  &trans  │
+//        └────────┴────────┼──────────┼────────┼───────────┤   ├───────────┼────────┼────────────┼────────┴──────────┘
+//                          │ &kp LALT │ &mo 1  │ &kp SPACE │   │ &kp SPACE │ &mo 2  │ &kp RSHIFT │                    
+//                          └──────────┴────────┴───────────┘   └───────────┴────────┴────────────┘                    
+      _AS(Q)   _AS(W)   _AS(E)     _AS(R)   _AS(T)          _AS(Y)      _AS(U)   _AS(I)       _AS(O)   _AS(P)  
+      _AS(A)   _AS(S)   _AS(D)     _AS(F)   _AS(G)          _AS(H)      _AS(J)   _AS(K)       _AS(L)   _AS(SQT)
+      _AS(Z)   _AS(X)   _AS(C)     _AS(V)   _AS(B)          _AS(N)      _AS(M)   &trans       &trans   &trans  
+                        &kp LALT   &mo 1    &kp SPACE       &kp SPACE   &mo 2    &kp RSHIFT                    
                         >;
                 };
 
                 left_layer {
                         display-name = "Left";
                         bindings = <
-//        ┌──────────┬────────┬──────────┬──────────┬───────────┐   ┌───────────────┬────────────────┬─────────────────┬──────────────────┬────────────────┐
-//        │ &kp EXCL │ &kp AT │ &kp HASH │ &kp DLLR │ &kp PRCNT │   │   &kp CARET   │    &kp AMPS    │ &kp KP_MULTIPLY │     &kp LPAR     │    &kp RPAR    │
-//        ├──────────┼────────┼──────────┼──────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┼────────────────┤
-//        │  &trans  │ &trans │  &trans  │  &trans  │  &trans   │   │ &kp BACKSLASH │  &kp KP_MINUS  │    &kp PLUS     │  &kp LEFT_BRACE  │  &RIGHT_BRACE  │
-//        ├──────────┼────────┼──────────┼──────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┼────────────────┤
-//        │  &trans  │ &trans │  &trans  │  &trans  │  &trans   │   │   &kp PIPE    │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACKET │ &RIGHT_BRACKET │
-//        └──────────┴────────┼──────────┼──────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┴────────────────┘
-//                            │ &kp LGUI │  &trans  │ &kp SPACE │   │   &kp SPACE   │    &kp ESC     │     &kp TAB     │                                    
-//                            └──────────┴──────────┴───────────┘   └───────────────┴────────────────┴─────────────────┘                                    
+//        ┌──────────┬────────┬──────────┬────────────┬───────────┐   ┌───────────────┬────────────────┬─────────────────┬──────────────────┬────────────────┐
+//        │ &kp EXCL │ &kp AT │ &kp HASH │ &kp DOLLAR │ &kp PRCNT │   │   &kp CARET   │    &kp AMPS    │ &kp KP_MULTIPLY │     &kp LPAR     │    &kp RPAR    │
+//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┼────────────────┤
+//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │ &kp BACKSLASH │   &kp MINUS    │    &kp PLUS     │  &kp LEFT_BRACE  │  &RIGHT_BRACE  │
+//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┼────────────────┤
+//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │   &kp PIPE    │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACKET │ &RIGHT_BRACKET │
+//        └──────────┴────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┴────────────────┘
+//                            │ &kp LGUI │   &trans   │ &kp SPACE │   │   &kp SPACE   │    &kp ESC     │     &kp TAB     │                                    
+//                            └──────────┴────────────┴───────────┘   └───────────────┴────────────────┴─────────────────┘                                    
       &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET       &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR      
-      &trans     &trans   &trans     &trans     &trans          &kp BACKSLASH   &kp KP_MINUS     &kp PLUS          &kp LEFT_BRACE     &RIGHT_BRACE  
-      &trans     &trans   &trans     &trans     &trans          &kp PIPE        &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &RIGHT_BRACKET
-                          &kp LGUI   &trans     &kp SPACE       &kp SPACE       &kp ESC          &kp TAB                                            
+      &trans     &trans   &trans     &trans       &trans          &kp BACKSLASH   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &RIGHT_BRACE  
+      &trans     &trans   &trans     &trans       &trans          &kp PIPE        &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &RIGHT_BRACKET
+                          &kp LGUI   &trans       &kp SPACE       &kp SPACE       &kp ESC          &kp TAB                                            
                         >;
                 };
-      ({[]})
 
                 right_layer {
                         display-name = "Right";
