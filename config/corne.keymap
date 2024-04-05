@@ -51,20 +51,19 @@
                 left_layer {
                         display-name = "Left";
                         bindings = <
-//        ┌──────────┬────────┬──────────┬────────────┬───────────┐   ┌───────────┬────────────────┬─────────────────┬──────────────────┬────────────────┐
-//        │ &kp EXCL │ &kp AT │ &kp HASH │ &kp DOLLAR │ &kp PRCNT │   │ &kp CARET │    &kp AMPS    │ &kp KP_MULTIPLY │     &kp LPAR     │    &kp RPAR    │
-//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────┼────────────────┼─────────────────┼──────────────────┼────────────────┤
-//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │  &trans   │     &trans     │     &trans      │      &trans      │     &trans     │
-//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────┼────────────────┼─────────────────┼──────────────────┼────────────────┤
-//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │ &kp PIPE  │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACKET │ &RIGHT_BRACKET │
-//        └──────────┴────────┼──────────┼────────────┼───────────┤   ├───────────┼────────────────┼─────────────────┼──────────────────┴────────────────┘
-//                            │ &kp LGUI │   &trans   │ &kp SPACE │   │ &kp SPACE │    &kp ESC     │     &kp TAB     │                                    
-//                            └──────────┴────────────┴───────────┘   └───────────┴────────────────┴─────────────────┘                                    
-      &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET   &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR      
-      &trans     &trans   &trans     &trans       &trans          &trans      &kp MINUS           &kp PLUS            &kp LEFT_BRACE             &kp RIGHT_BRACE
-      &trans     &trans   &trans     &trans       &trans          &trans      &trans           &trans            &kp LEFT_BRACE             &kp RIGHT_BRACE
-      // &trans     &trans   &trans     &trans       &trans          &kp PIPE    &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &RIGHT_BRACKET
-                          &kp LGUI   &trans       &kp SPACE       &kp SPACE   &kp ESC          &kp TAB                                            
+//        ┌──────────┬────────┬──────────┬────────────┬───────────┐   ┌───────────┬────────────────┬─────────────────┬────────────────┬─────────────────┐
+//        │ &kp EXCL │ &kp AT │ &kp HASH │ &kp DOLLAR │ &kp PRCNT │   │ &kp CARET │    &kp AMPS    │ &kp KP_MULTIPLY │    &kp LPAR    │    &kp RPAR     │
+//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────┼────────────────┼─────────────────┼────────────────┼─────────────────┤
+//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │  &trans   │   &kp MINUS    │    &kp PLUS     │ &kp LEFT_BRACE │ &kp RIGHT_BRACE │
+//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────┼────────────────┼─────────────────┼────────────────┼─────────────────┤
+//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │  &trans   │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACE │ &kp RIGHT_BRACE │
+//        └──────────┴────────┼──────────┼────────────┼───────────┤   ├───────────┼────────────────┼─────────────────┼────────────────┴─────────────────┘
+//                            │ &kp LGUI │   &trans   │ &kp SPACE │   │ &kp SPACE │    &kp ESC     │     &kp TAB     │                                   
+//                            └──────────┴────────────┴───────────┘   └───────────┴────────────────┴─────────────────┘                                   
+      &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET   &kp AMPS         &kp KP_MULTIPLY   &kp LPAR         &kp RPAR       
+      &trans     &trans   &trans     &trans       &trans          &trans      &kp MINUS        &kp PLUS          &kp LEFT_BRACE   &kp RIGHT_BRACE
+      &trans     &trans   &trans     &trans       &trans          &trans      &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACE   &kp RIGHT_BRACE
+                          &kp LGUI   &trans       &kp SPACE       &kp SPACE   &kp ESC          &kp TAB                                           
                         >;
                 };
 
