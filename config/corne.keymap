@@ -41,14 +41,10 @@
 //        └────────┴────────┼──────────┼────────┼───────────┤   ├───────────┼────────┼────────────┼────────┴──────────┘
 //                          │ &kp LALT │ &mo 1  │ &kp SPACE │   │ &kp SPACE │ &mo 2  │ &kp RSHIFT │                    
 //                          └──────────┴────────┴───────────┘   └───────────┴────────┴────────────┘                    
-      _AS(N1)      _AS(N2)      _AS(N3)    _AS(N4)      _AS(N5)         _AS(N6)     _AS(N7)    _AS(N8)     _AS(N9)     _AS(N0)  
-      _AS(MINUS)   _AS(EQUAL)   &kp LBRC   &kp LBKT     &kp LPAR        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   _AS(BSLH)
-      _AS(GRAVE)   &trans       &trans     _AS(COMMA)   &kp COLON       &kp SEMI    _AS(DOT)   &kp LCTRL   &kp RALT    &trans   
-                                &kp LGUI   &kp ESC      &kp SPACE       &kp SPACE   &trans     &kp TAB                          
-      // _AS(Q)   _AS(W)   _AS(E)     _AS(R)   _AS(T)          _AS(Y)      _AS(U)   _AS(I)       _AS(O)   _AS(P)  
-      // _AS(A)   _AS(S)   _AS(D)     _AS(F)   _AS(G)          _AS(H)      _AS(J)   _AS(K)       _AS(L)   _AS(SQT)
-      // _AS(Z)   _AS(X)   _AS(C)     _AS(V)   _AS(B)          _AS(N)      _AS(M)   &trans       &trans   &trans  
-      //                   &kp LALT   &mo 1    &kp SPACE       &kp SPACE   &mo 2    &kp RSHIFT                    
+      _AS(Q)   _AS(W)   _AS(E)     _AS(R)   _AS(T)          _AS(Y)      _AS(U)   _AS(I)       _AS(O)   _AS(P)  
+      _AS(A)   _AS(S)   _AS(D)     _AS(F)   _AS(G)          _AS(H)      _AS(J)   _AS(K)       _AS(L)   _AS(SQT)
+      _AS(Z)   _AS(X)   _AS(C)     _AS(V)   _AS(B)          _AS(N)      _AS(M)   &trans       &trans   &trans  
+                        &kp LALT   &mo 1    &kp SPACE       &kp SPACE   &mo 2    &kp RSHIFT                    
                         >;
                 };
 
@@ -64,10 +60,14 @@
 //        └──────────┴────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┴────────────────┘
 //                            │ &kp LGUI │   &trans   │ &kp SPACE │   │   &kp SPACE   │    &kp ESC     │     &kp TAB     │                                    
 //                            └──────────┴────────────┴───────────┘   └───────────────┴────────────────┴─────────────────┘                                    
-      &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET       &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR      
-      &trans     &trans   &trans     &trans       &trans          &kp BACKSLASH   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &RIGHT_BRACE  
-      &trans     &trans   &trans     &trans       &trans          &kp PIPE        &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &RIGHT_BRACKET
-                          &kp LGUI   &trans       &kp SPACE       &kp SPACE       &kp ESC          &kp TAB                                            
+      // &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET       &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR      
+      // &trans     &trans   &trans     &trans       &trans          &kp BACKSLASH   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &RIGHT_BRACE  
+      // &trans     &trans   &trans     &trans       &trans          &kp PIPE        &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &RIGHT_BRACKET
+      //                     &kp LGUI   &trans       &kp SPACE       &kp SPACE       &kp ESC          &kp TAB                                            
+      _AS(Q)   _AS(W)   _AS(E)     _AS(R)   _AS(T)          _AS(Y)      _AS(U)   _AS(I)       _AS(O)   _AS(P)  
+      _AS(A)   _AS(S)   _AS(D)     _AS(F)   _AS(G)          _AS(H)      _AS(J)   _AS(K)       _AS(L)   _AS(SQT)
+      _AS(Z)   _AS(X)   _AS(C)     _AS(V)   _AS(B)          _AS(N)      _AS(M)   &trans       &trans   &trans  
+                        &kp LALT   &mo 1    &kp SPACE       &kp SPACE   &mo 2    &kp RSHIFT                    
                         >;
                 };
 
