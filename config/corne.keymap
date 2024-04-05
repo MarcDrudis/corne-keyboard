@@ -39,12 +39,12 @@
 //        ├────────┼────────┼──────────┼────────┼───────────┤   ├───────────┼────────┼────────────┼──────────┼────────────┤
 //        │ _AS(Z) │ _AS(X) │  _AS(C)  │ _AS(V) │  _AS(B)   │   │  _AS(N)   │ _AS(M) │ _AS(COMMA) │ _AS(DOT) │ _AS(SLASH) │
 //        └────────┴────────┼──────────┼────────┼───────────┤   ├───────────┼────────┼────────────┼──────────┴────────────┘
-//                          │ &kp LALT │ &mo 1  │ &kp SPACE │   │ &kp SPACE │ &mo 2  │    &kp     │                        
+//                          │ &kp LALT │ &mo 1  │ &kp SPACE │   │ &kp SPACE │ &mo 2  │ &kp SHIFT  │                        
 //                          └──────────┴────────┴───────────┘   └───────────┴────────┴────────────┘                        
       _AS(Q)   _AS(W)   _AS(E)     _AS(R)   _AS(T)          _AS(Y)      _AS(U)   _AS(I)       _AS(O)     _AS(P)    
       _AS(A)   _AS(S)   _AS(D)     _AS(F)   _AS(G)          _AS(H)      _AS(J)   _AS(K)       _AS(L)     _AS(SQT)  
       _AS(Z)   _AS(X)   _AS(C)     _AS(V)   _AS(B)          _AS(N)      _AS(M)   _AS(COMMA)   _AS(DOT)   _AS(SLASH)
-                        &kp LALT   &mo 1    &kp SPACE       &kp SPACE   &mo 2    &kp                               
+                        &kp LALT   &mo 1    &kp SPACE       &kp SPACE   &mo 2    &kp SHIFT                         
                         >;
                 };
 
@@ -61,7 +61,7 @@
 //                            │ &kp LGUI │  &trans  │ &kp SPACE │   │   &kp SPACE   │    &kp ESC     │     &kp TAB     │                                    
 //                            └──────────┴──────────┴───────────┘   └───────────────┴────────────────┴─────────────────┘                                    
       &kp EXCL   &kp AT   &kp HASH   &kp DLLR   &kp PRCNT       &kp CARET       &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR      
-      &trans     &trans   &trans     &trans     &trans          &kp BACKSLASH   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &RIGHT_BRACE  
+      &trans     &trans   &trans     &trans     &trans          &kp BACKSLASH   &kp KP_MINUS        &kp PLUS          &kp LEFT_BRACE     &RIGHT_BRACE  
       &trans     &trans   &trans     &trans     &trans          &kp PIPE        &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &RIGHT_BRACKET
                           &kp LGUI   &trans     &kp SPACE       &kp SPACE       &kp ESC          &kp TAB                                            
                         >;
@@ -74,14 +74,14 @@
 //        ┌────────────┬────────────┬──────────┬────────────┬───────────┐   ┌──────────┬──────────┬───────────┬───────────┬───────────┐
 //        │  _AS(N1)   │  _AS(N2)   │ _AS(N3)  │  _AS(N4)   │  _AS(N5)  │   │ _AS(N6)  │ _AS(N7)  │  _AS(N8)  │  _AS(N9)  │  _AS(N0)  │
 //        ├────────────┼────────────┼──────────┼────────────┼───────────┤   ├──────────┼──────────┼───────────┼───────────┼───────────┤
-//        │ _AS(MINUS) │ _AS(EQUAL) │ &kp LBRC │  &kp LBKT  │ &kp LPAR  │   │ &kp RPAR │ &kp RBKT │ &kp RBRC  │ _AS(FSLH) │ _AS(BSLH) │
+//        │ _AS(MINUS) │ _AS(EQUAL) │ &kp LBRC │  &kp LBKT  │ &kp LPAR  │   │ &kp LEFT │ &kp DOWN │  &kp UP   │ &kp RIGHT │ _AS(BSLH) │
 //        ├────────────┼────────────┼──────────┼────────────┼───────────┤   ├──────────┼──────────┼───────────┼───────────┼───────────┤
 //        │ _AS(GRAVE) │   &trans   │  &trans  │ _AS(COMMA) │ &kp COLON │   │ &kp SEMI │ _AS(DOT) │ &kp LCTRL │ &kp RALT  │  &trans   │
 //        └────────────┴────────────┼──────────┼────────────┼───────────┤   ├──────────┼──────────┼───────────┼───────────┴───────────┘
 //                                  │ &kp LGUI │  &kp ESC   │ &kp SPACE │   │ _AS(RET) │  &trans  │  &kp TAB  │                        
 //                                  └──────────┴────────────┴───────────┘   └──────────┴──────────┴───────────┘                        
       _AS(N1)      _AS(N2)      _AS(N3)    _AS(N4)      _AS(N5)         _AS(N6)    _AS(N7)    _AS(N8)     _AS(N9)     _AS(N0)  
-      _AS(MINUS)   _AS(EQUAL)   &kp LBRC   &kp LBKT     &kp LPAR        &kp RPAR   &kp RBKT   &kp RBRC    _AS(FSLH)   _AS(BSLH)
+      _AS(MINUS)   _AS(EQUAL)   &kp LBRC   &kp LBKT     &kp LPAR        &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT   _AS(BSLH)
       _AS(GRAVE)   &trans       &trans     _AS(COMMA)   &kp COLON       &kp SEMI   _AS(DOT)   &kp LCTRL   &kp RALT    &trans   
                                 &kp LGUI   &kp ESC      &kp SPACE       _AS(RET)   &trans     &kp TAB                          
                         >;
@@ -92,6 +92,11 @@
 / {
     combos {
         compatible = "zmk,combos";
+        combo_TAB{
+            timeout-ms = <150>;
+            key-positions = <0 1>;
+            bindings = <&kp TAB>;
+        };
         combo_esc {
             timeout-ms = <150>;
             key-positions = <10 11>;
@@ -107,12 +112,12 @@
             key-positions = <18 19>;
             bindings = <&kp RET>;
         }
-        combo_shift{
+        combo_RCTRL{
             timeout-ms = <150>;
             key-positions = <30 31>;
-            bindings = <&kp LSHIFT>;
+            bindings = <&kp LCTRL>;
         };
-        combo_shift{
+        combo_LCTRL{
             timeout-ms = <150>;
             key-positions = <38 39>;
             bindings = <&kp RCTRL>;
