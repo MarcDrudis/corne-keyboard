@@ -32,31 +32,57 @@
                 default_layer {
                         display-name = "Base";
                         bindings = <
-   _AS(Q) _AS(W) _AS(E) _AS(R) _AS(T)     _AS(Y)   _AS(U)  _AS(I)     _AS(O)     _AS(P)
-   _AS(A) _AS(S) _AS(D) _AS(F) _AS(G)     _AS(H)   _AS(J)  _AS(K)     _AS(L)     _AS(SQT)
-   _AS(Z) _AS(X) _AS(C) _AS(V) _AS(B)     _AS(N)   _AS(M)  &kp LCTL  &kp RALT  _AS(DOT)
-        &kp LGUI &mo 1 &kp SPACE     _AS(RET) &mo 2  &kp BSPC
+//        ┌────────┬────────┬──────────┬────────┬───────────┐   ┌──────────┬────────┬──────────┬──────────┬──────────┐
+//        │ _AS(Q) │ _AS(W) │  _AS(E)  │ _AS(R) │  _AS(T)   │   │  _AS(Y)  │ _AS(U) │  _AS(I)  │  _AS(O)  │  _AS(P)  │
+//        ├────────┼────────┼──────────┼────────┼───────────┤   ├──────────┼────────┼──────────┼──────────┼──────────┤
+//        │ _AS(A) │ _AS(S) │  _AS(D)  │ _AS(F) │  _AS(G)   │   │  _AS(H)  │ _AS(J) │  _AS(K)  │  _AS(L)  │ _AS(SQT) │
+//        ├────────┼────────┼──────────┼────────┼───────────┤   ├──────────┼────────┼──────────┼──────────┼──────────┤
+//        │ _AS(Z) │ _AS(X) │  _AS(C)  │ _AS(V) │  _AS(B)   │   │  _AS(N)  │ _AS(M) │ &kp LCTL │ &kp RALT │ _AS(DOT) │
+//        └────────┴────────┼──────────┼────────┼───────────┤   ├──────────┼────────┼──────────┼──────────┴──────────┘
+//                          │ &kp LGUI │ &mo 1  │ &kp SPACE │   │ _AS(RET) │ &mo 2  │ &kp BSPC │                      
+//                          └──────────┴────────┴───────────┘   └──────────┴────────┴──────────┘                      
+      _AS(Q)   _AS(W)   _AS(E)     _AS(R)   _AS(T)          _AS(Y)     _AS(U)   _AS(I)     _AS(O)     _AS(P)  
+      _AS(A)   _AS(S)   _AS(D)     _AS(F)   _AS(G)          _AS(H)     _AS(J)   _AS(K)     _AS(L)     _AS(SQT)
+      _AS(Z)   _AS(X)   _AS(C)     _AS(V)   _AS(B)          _AS(N)     _AS(M)   &kp LCTL   &kp RALT   _AS(DOT)
+                        &kp LGUI   &mo 1    &kp SPACE       _AS(RET)   &mo 2    &kp BSPC                      
                         >;
                 };
 
                 lower_layer {
                         display-name = "Lower";
                         bindings = <
-   &kp EXCL     &kp AT       &kp H_ASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &trans 
-   &bt BT_CLR   &trans       &trans       &trans       &trans           &trans    &trans    &trans          &trans    &trans 
-                             &kp LGUI     &trans       &kp SPACE        _AS(RET)   &kp ESC   &kp TAB
+//        ┌──────────────┬──────────────┬──────────────┬──────────────┬──────────────┐   ┌───────────┬──────────┬─────────────────┬───────────┬──────────┐
+//        │   &kp EXCL   │    &kp AT    │  &kp H_ASH   │   &kp DLLR   │  &kp PRCNT   │   │ &kp CARET │ &kp AMPS │ &kp KP_MULTIPLY │ &kp LPAR  │ &kp RPAR │
+//        ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├───────────┼──────────┼─────────────────┼───────────┼──────────┤
+//        │ &bt BT_SEL 0 │ &bt BT_SEL 1 │ &bt BT_SEL 2 │ &bt BT_SEL 3 │ &bt BT_SEL 4 │   │ &kp LEFT  │ &kp DOWN │     &kp UP      │ &kp RIGHT │  &trans  │
+//        ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├───────────┼──────────┼─────────────────┼───────────┼──────────┤
+//        │  &bt BT_CLR  │    &trans    │    &trans    │    &trans    │    &trans    │   │  &trans   │  &trans  │     &trans      │  &trans   │  &trans  │
+//        └──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤   ├───────────┼──────────┼─────────────────┼───────────┴──────────┘
+//                                      │   &kp LGUI   │    &trans    │  &kp SPACE   │   │ _AS(RET)  │ &kp ESC  │     &kp TAB     │                       
+//                                      └──────────────┴──────────────┴──────────────┘   └───────────┴──────────┴─────────────────┘                       
+      &kp EXCL       &kp AT         &kp H_ASH      &kp DLLR       &kp PRCNT          &kp CARET   &kp AMPS   &kp KP_MULTIPLY   &kp LPAR    &kp RPAR
+      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4       &kp LEFT    &kp DOWN   &kp UP            &kp RIGHT   &trans  
+      &bt BT_CLR     &trans         &trans         &trans         &trans             &trans      &trans     &trans            &trans      &trans  
+                                    &kp LGUI       &trans         &kp SPACE          _AS(RET)    &kp ESC    &kp TAB                               
                         >;
                 };
 
                 raise_layer {
                         display-name = "Raise";
                         bindings = <
-
-   _AS(N1)    _AS(N2)    _AS(N3)    _AS(N4)    _AS(N5)        _AS(N6)    _AS(N7)    _AS(N8)    _AS(N9)   _AS(N0)
-   _AS(MINUS) _AS(EQUAL) &kp LBRC  &kp LBKT  &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC  _AS(FSLH) _AS(BSLH)
-   _AS(GRAVE) &trans    &trans    _AS(COMMA) &kp COLON     &kp SEMI  _AS(DOT)   &kp LCTRL &kp RALT &trans
-                       &kp LGUI  &kp ESC   &kp SPACE     _AS(RET)   &trans    &kp TAB
+//        ┌────────────┬────────────┬──────────┬────────────┬───────────┐   ┌──────────┬──────────┬───────────┬───────────┬───────────┐
+//        │  _AS(N1)   │  _AS(N2)   │ _AS(N3)  │  _AS(N4)   │  _AS(N5)  │   │ _AS(N6)  │ _AS(N7)  │  _AS(N8)  │  _AS(N9)  │  _AS(N0)  │
+//        ├────────────┼────────────┼──────────┼────────────┼───────────┤   ├──────────┼──────────┼───────────┼───────────┼───────────┤
+//        │ _AS(MINUS) │ _AS(EQUAL) │ &kp LBRC │  &kp LBKT  │ &kp LPAR  │   │ &kp RPAR │ &kp RBKT │ &kp RBRC  │ _AS(FSLH) │ _AS(BSLH) │
+//        ├────────────┼────────────┼──────────┼────────────┼───────────┤   ├──────────┼──────────┼───────────┼───────────┼───────────┤
+//        │ _AS(GRAVE) │   &trans   │  &trans  │ _AS(COMMA) │ &kp COLON │   │ &kp SEMI │ _AS(DOT) │ &kp LCTRL │ &kp RALT  │  &trans   │
+//        └────────────┴────────────┼──────────┼────────────┼───────────┤   ├──────────┼──────────┼───────────┼───────────┴───────────┘
+//                                  │ &kp LGUI │  &kp ESC   │ &kp SPACE │   │ _AS(RET) │  &trans  │  &kp TAB  │                        
+//                                  └──────────┴────────────┴───────────┘   └──────────┴──────────┴───────────┘                        
+      _AS(N1)      _AS(N2)      _AS(N3)    _AS(N4)      _AS(N5)         _AS(N6)    _AS(N7)    _AS(N8)     _AS(N9)     _AS(N0)  
+      _AS(MINUS)   _AS(EQUAL)   &kp LBRC   &kp LBKT     &kp LPAR        &kp RPAR   &kp RBKT   &kp RBRC    _AS(FSLH)   _AS(BSLH)
+      _AS(GRAVE)   &trans       &trans     _AS(COMMA)   &kp COLON       &kp SEMI   _AS(DOT)   &kp LCTRL   &kp RALT    &trans   
+                                &kp LGUI   &kp ESC      &kp SPACE       _AS(RET)   &trans     &kp TAB                          
                         >;
                 };
         };
