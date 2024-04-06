@@ -51,19 +51,19 @@
                 left_layer {
                         display-name = "Left";
                         bindings = <
-//        ┌──────────┬────────┬──────────┬────────────┬───────────┐   ┌───────────────┬────────────────┬─────────────────┬────────────────┬─────────────────┐
-//        │ &kp EXCL │ &kp AT │ &kp HASH │ &kp DOLLAR │ &kp PRCNT │   │   &kp CARET   │    &kp AMPS    │ &kp KP_MULTIPLY │    &kp LPAR    │    &kp RPAR     │
-//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼────────────────┼─────────────────┤
-//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │ &kp BACKSLASH │   &kp MINUS    │    &kp PLUS     │ &kp LEFT_BRACE │ &kp RIGHT_BRACE │
-//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼────────────────┼─────────────────┤
-//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │   &kp PIPE    │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACE │ &kp RIGHT_BRACE │
-//        └──────────┴────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼────────────────┴─────────────────┘
-//                            │ &kp LGUI │   &trans   │ &kp SPACE │   │   &kp SPACE   │    &kp ESC     │     &kp TAB     │                                   
-//                            └──────────┴────────────┴───────────┘   └───────────────┴────────────────┴─────────────────┘                                   
-      &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET       &kp AMPS         &kp KP_MULTIPLY   &kp LPAR         &kp RPAR       
-      &trans     &trans   &trans     &trans       &trans          &kp BACKSLASH   &kp MINUS        &kp PLUS          &kp LEFT_BRACE   &kp RIGHT_BRACE
+//        ┌──────────┬────────┬──────────┬────────────┬───────────┐   ┌───────────────┬────────────────┬─────────────────┬──────────────────┬───────────────────┐
+//        │ &kp EXCL │ &kp AT │ &kp HASH │ &kp DOLLAR │ &kp PRCNT │   │   &kp CARET   │    &kp AMPS    │ &kp KP_MULTIPLY │     &kp LPAR     │     &kp RPAR      │
+//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
+//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │ &kp BACKSLASH │   &kp MINUS    │    &kp PLUS     │  &kp LEFT_BRACE  │  &kp RIGHT_BRACE  │
+//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
+//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │   &kp PIPE    │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACKET │ &kp RIGHT_BRACKET │
+//        └──────────┴────────┼──────────┼────────────┼───────────┤   ├───────────────┼────────────────┼─────────────────┼──────────────────┴───────────────────┘
+//                            │ &kp LGUI │   &trans   │ &kp SPACE │   │   &kp SPACE   │     &mo 3      │     &kp TAB     │                                       
+//                            └──────────┴────────────┴───────────┘   └───────────────┴────────────────┴─────────────────┘                                       
+      &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET       &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR         
+      &trans     &trans   &trans     &trans       &trans          &kp BACKSLASH   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  
       &trans     &trans   &trans     &trans       &trans          &kp PIPE        &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
-                          &kp LGUI   &trans       &kp SPACE       &kp SPACE       &kp ESC          &kp TAB                                           
+                          &kp LGUI   &trans       &kp SPACE       &kp SPACE       &mo 3            &kp TAB                                               
                         >;
                 };
 
@@ -77,14 +77,37 @@
 //        ├────────────┼────────────┼──────────┼────────────┼───────────┤   ├───────────┼──────────┼───────────┼───────────┼───────────┤
 //        │ _AS(GRAVE) │   &trans   │  &trans  │ _AS(COMMA) │ &kp COLON │   │ &kp SEMI  │ _AS(DOT) │ &kp LCTRL │ &kp RALT  │  &trans   │
 //        └────────────┴────────────┼──────────┼────────────┼───────────┤   ├───────────┼──────────┼───────────┼───────────┴───────────┘
-//                                  │ &kp LGUI │  &kp ESC   │ &kp SPACE │   │ &kp SPACE │  &trans  │  &kp TAB  │                        
+//                                  │ &kp LGUI │   &mo 3    │ &kp SPACE │   │ &kp SPACE │  &trans  │  &kp TAB  │                        
 //                                  └──────────┴────────────┴───────────┘   └───────────┴──────────┴───────────┘                        
       _AS(N1)      _AS(N2)      _AS(N3)    _AS(N4)      _AS(N5)         _AS(N6)     _AS(N7)    _AS(N8)     _AS(N9)     _AS(N0)  
       _AS(MINUS)   _AS(EQUAL)   &kp LBRC   &kp LBKT     &kp LPAR        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   _AS(BSLH)
       _AS(GRAVE)   &trans       &trans     _AS(COMMA)   &kp COLON       &kp SEMI    _AS(DOT)   &kp LCTRL   &kp RALT    &trans   
-                                &kp LGUI   &kp ESC      &kp SPACE       &kp SPACE   &trans     &kp TAB                          
+                                &kp LGUI   &mo 3        &kp SPACE       &kp SPACE   &trans     &kp TAB                          
                         >;
                 };
+
+                both_layer {
+                        display-name = "Both";
+                        bindings = <
+//        ┌────────┬────────┬────────┬────────┬────────┐   ┌────────┬────────┬────────┬────────┬────────┐
+//        │ &trans │ &trans │ &trans │ &trans │ &trans │   │ &trans │ &trans │ &trans │ &trans │ &trans │
+//        ├────────┼────────┼────────┼────────┼────────┤   ├────────┼────────┼────────┼────────┼────────┤
+//        │ &trans │ &trans │ &trans │ &trans │ &trans │   │ &trans │ &trans │ &trans │ &trans │ &trans │
+//        ├────────┼────────┼────────┼────────┼────────┤   ├────────┼────────┼────────┼────────┼────────┤
+//        │ &trans │ &trans │ &trans │ &trans │ &trans │   │ &trans │ &trans │ &trans │ &trans │ &trans │
+//        └────────┴────────┼────────┼────────┼────────┤   ├────────┼────────┼────────┼────────┴────────┘
+//                          │ &trans │ &trans │ &trans │   │ &trans │ &trans │ &trans │                  
+//                          └────────┴────────┴────────┘   └────────┴────────┴────────┘                  
+      &trans   &trans   &trans   &trans   &trans       &trans   &trans   &trans   &trans   &trans
+      &trans   &trans   &trans   &trans   &trans       &trans   &trans   &trans   &trans   &trans
+      &trans   &trans   &trans   &trans   &trans       &trans   &trans   &trans   &trans   &trans
+                        &trans   &trans   &trans       &trans   &trans   &trans                  
+                        >;
+                };
+
+
+
+
         };
 };
 
@@ -102,7 +125,7 @@
             bindings = <&kp ESC>;
         };
         combo_backspace{
-            timeout-ms = <150>;
+            timeout-ms = <500>;
             key-positions = <8 9>;
             bindings = <&kp BSPC>;
         };
