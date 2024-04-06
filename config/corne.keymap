@@ -51,19 +51,19 @@
                 left_layer {
                         display-name = "Left";
                         bindings = <
-//        ┌───────────┬──────────────────┬──────────┬────────────┬───────────┐   ┌──────────────────┬────────────────┬─────────────────┬──────────────────┬───────────────────┐
-//        │ &kp EXCL  │      &kp AT      │ &kp HASH │ &kp DOLLAR │ &kp PRCNT │   │    &kp CARET     │    &kp AMPS    │ &kp KP_MULTIPLY │     &kp LPAR     │     &kp RPAR      │
-//        ├───────────┼──────────────────┼──────────┼────────────┼───────────┤   ├──────────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
-//        │ &kp GRAVE │ &kp SINGLE_QUOTE │  &trans  │   &trans   │  &trans   │   │ &kp SINGLE_QUOTE │   &kp MINUS    │    &kp PLUS     │  &kp LEFT_BRACE  │  &kp RIGHT_BRACE  │
-//        ├───────────┼──────────────────┼──────────┼────────────┼───────────┤   ├──────────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
-//        │  &trans   │      &trans      │  &trans  │   &trans   │  &trans   │   │ &kp DOUBLE_QUOTE │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACKET │ &kp RIGHT_BRACKET │
-//        └───────────┴──────────────────┼──────────┼────────────┼───────────┤   ├──────────────────┼────────────────┼─────────────────┼──────────────────┴───────────────────┘
-//                                       │  &trans  │   &trans   │ &kp SPACE │   │    &kp SPACE     │     &mo 3      │     &kp TAB     │                                       
-//                                       └──────────┴────────────┴───────────┘   └──────────────────┴────────────────┴─────────────────┘                                       
-      &kp EXCL    &kp AT             &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET          &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR         
-      &kp GRAVE   &kp SINGLE_QUOTE   &trans     &trans       &trans          &kp SINGLE_QUOTE   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  
-      &trans      &trans             &trans     &trans       &trans          &kp DOUBLE_QUOTE   &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
-                                     &trans     &trans       &kp SPACE       &kp SPACE          &mo 3            &kp TAB                                               
+//        ┌──────────┬────────┬──────────┬────────────┬───────────┐   ┌──────────────────┬────────────────┬─────────────────┬──────────────────┬───────────────────┐
+//        │ &kp EXCL │ &kp AT │ &kp HASH │ &kp DOLLAR │ &kp PRCNT │   │    &kp CARET     │    &kp AMPS    │ &kp KP_MULTIPLY │     &kp LPAR     │     &kp RPAR      │
+//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├──────────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
+//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │ &kp SINGLE_QUOTE │   &kp MINUS    │    &kp PLUS     │  &kp LEFT_BRACE  │  &kp RIGHT_BRACE  │
+//        ├──────────┼────────┼──────────┼────────────┼───────────┤   ├──────────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
+//        │  &trans  │ &trans │  &trans  │   &trans   │  &trans   │   │ &kp DOUBLE_QUOTE │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACKET │ &kp RIGHT_BRACKET │
+//        └──────────┴────────┼──────────┼────────────┼───────────┤   ├──────────────────┼────────────────┼─────────────────┼──────────────────┴───────────────────┘
+//                            │  &trans  │   &trans   │ &kp SPACE │   │    &kp SPACE     │     &mo 3      │     &kp TAB     │                                       
+//                            └──────────┴────────────┴───────────┘   └──────────────────┴────────────────┴─────────────────┘                                       
+      &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET          &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR         
+      &trans     &trans   &trans     &trans       &trans          &kp SINGLE_QUOTE   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  
+      &trans     &trans   &trans     &trans       &trans          &kp DOUBLE_QUOTE   &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+                          &trans     &trans       &trans       &trans          &trans &trans                                                
                         >;
                 };
 
@@ -75,13 +75,13 @@
 //        ├────────┼────────┼──────────┼──────────┼───────────┤   ├───────────┼───────────────────┼───────────────────┼───────────┼───────────┤
 //        │ &trans │ &trans │ &kp LBRC │ &kp LBKT │ &kp LPAR  │   │ &kp LEFT  │     &kp DOWN      │      &kp UP       │ &kp RIGHT │ _AS(BSLH) │
 //        ├────────┼────────┼──────────┼──────────┼───────────┤   ├───────────┼───────────────────┼───────────────────┼───────────┼───────────┤
-//        │ &trans │ &trans │  &trans  │  &trans  │ &kp COLON │   │ &kp SEMI  │ &kp C_VOLUME_DOWN │ &kp C_VOLUME_DOWN │ &kp trans │  &trans   │
+//        │ &trans │ &trans │  &trans  │  &trans  │ &kp COLON │   │ &kp SEMI  │ &kp C_VOLUME_DOWN │ &kp C_VOLUME_DOWN │  & trans  │  &trans   │
 //        └────────┴────────┼──────────┼──────────┼───────────┤   ├───────────┼───────────────────┼───────────────────┼───────────┴───────────┘
 //                          │  &trans  │  &mo 3   │ &kp SPACE │   │ &kp SPACE │      &trans       │      &kp TAB      │                        
 //                          └──────────┴──────────┴───────────┘   └───────────┴───────────────────┴───────────────────┘                        
       &kp N1   &kp N2   &kp N3     &kp N4     &kp N5          &kp N6      &kp N7              &kp N8              &kp N9      &kp N0   
       &trans   &trans   &kp LBRC   &kp LBKT   &kp LPAR        &kp LEFT    &kp DOWN            &kp UP              &kp RIGHT   _AS(BSLH)
-      &trans   &trans   &trans     &trans     &kp COLON       &kp SEMI    &kp C_VOLUME_DOWN   &kp C_VOLUME_DOWN   & trans   &trans   
+      &trans   &trans   &trans     &trans     &kp COLON       &kp SEMI    &kp C_VOLUME_DOWN   &kp C_VOLUME_DOWN   & trans     &trans   
                         &trans     &mo 3      &kp SPACE       &kp SPACE   &trans              &kp TAB                                  
                         >;
                 };
