@@ -62,7 +62,7 @@
 //                            └──────────┴────────────┴───────────┘   └──────────────────┴────────────────┴─────────────────┘                                       
       &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET          &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR         
       &trans     &trans   &trans     &trans       &trans          &kp SINGLE_QUOTE   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  
-      &trans     &trans   &trans     &trans       &trans          &kp DOUBLE_QUOTE   &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+      &trans     &trans   &trans     &trans       &trans          &kp DOUBLE_QUOTES  &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
                           &trans     &trans       &trans       &trans          &trans &trans                                                
                         >;
                 };
