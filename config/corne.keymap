@@ -126,11 +126,10 @@
         };
         combo_backspace{
             timeout-ms = <50>;
-            // require-prior-idle-ms=<50>;
+            require-prior-idle-ms=<50>;
             key-positions = <8 9>;
             bindings = <&kp BSPC>;
         };
-      something like this does work indeed.
         combo_return{
             timeout-ms = <50>;
             key-positions = <18 19>;
