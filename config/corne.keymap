@@ -61,7 +61,7 @@
 //                            │ &kp LGUI │   &trans   │ &kp SPACE │   │   &kp SPACE   │     &mo 3      │     &kp TAB     │                                       
 //                            └──────────┴────────────┴───────────┘   └───────────────┴────────────────┴─────────────────┘                                       
       &kp EXCL   &kp AT   &kp HASH   &kp DOLLAR   &kp PRCNT       &kp CARET       &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR         
-      &trans     &trans   &trans     &trans       &trans          &kp BACKSLASH   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  
+      &kp GRAVE     &kp SINGLE_QUOTE   &trans     &trans       &trans          &kp BACKSLASH   &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  
       &trans     &trans   &trans     &trans       &trans          &kp PIPE        &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
                           &kp LGUI   &trans       &kp SPACE       &kp SPACE       &mo 3            &kp TAB                                               
                         >;
