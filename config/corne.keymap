@@ -56,19 +56,19 @@
                 left_layer {
                         display-name = "Left";
                         bindings = <
-//        ┌──────────┬────────┬───────────┬──────────────────┬───────────────┐   ┌───────────────────┬────────────────┬─────────────────┬──────────────────┬───────────────────┐
-//        │ &kp EXCL │ &kp AT │ &kp HASH  │    &kp DOLLAR    │   &kp PRCNT   │   │     &kp CARET     │    &kp AMPS    │ &kp KP_MULTIPLY │     &kp LPAR     │     &kp RPAR      │
-//        ├──────────┼────────┼───────────┼──────────────────┼───────────────┤   ├───────────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
-//        │ &kp TAB  │ &trans │ &kp GRAVE │ &kp SINGLE_QUOTE │ &kp BACKSLASH │   │ &kp SINGLE_QUOTE  │   &kp MINUS    │    &kp PLUS     │  &kp LEFT_BRACE  │  &kp RIGHT_BRACE  │
-//        ├──────────┼────────┼───────────┼──────────────────┼───────────────┤   ├───────────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
-//        │  &trans  │ &trans │ &kp TILDE │ &kp DOUBLE_QUOTE │   &kp PIPE    │   │ &kp DOUBLE_QUOTES │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACKET │ &kp RIGHT_BRACKET │
-//        └──────────┴────────┼───────────┼──────────────────┼───────────────┤   ├───────────────────┼────────────────┼─────────────────┼──────────────────┴───────────────────┘
-//                            │  &trans   │      &trans      │    &trans     │   │      &trans       │ &mo BOTH_LAYER │     &trans      │                                       
-//                            └───────────┴──────────────────┴───────────────┘   └───────────────────┴────────────────┴─────────────────┘                                       
-      &kp EXCL   &kp AT   &kp HASH    &kp DOLLAR         &kp PRCNT           &kp CARET           &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR         
-      &kp TAB    &trans   &kp GRAVE   &kp SINGLE_QUOTE   &kp BACKSLASH       &kp SINGLE_QUOTE    &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  
-      &trans     &trans   &kp TILDE   &kp DOUBLE_QUOTE   &kp PIPE            &kp DOUBLE_QUOTES   &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
-                          &trans      &trans             &trans              &trans              &mo BOTH_LAYER   &trans                                                
+//        ┌──────────┬───────────┬──────────────────┬──────────────┬───────────────┐   ┌───────────────────┬────────────────┬─────────────────┬──────────────────┬───────────────────┐
+//        │ &kp EXCL │  &kp AT   │     &kp HASH     │  &kp DOLLAR  │   &kp PRCNT   │   │     &kp CARET     │    &kp AMPS    │ &kp KP_MULTIPLY │     &kp LPAR     │     &kp RPAR      │
+//        ├──────────┼───────────┼──────────────────┼──────────────┼───────────────┤   ├───────────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
+//        │ &kp TAB  │ &kp GRAVE │ &kp SINGLE_QUOTE │  &kp SLASH   │ &kp BACKSLASH │   │ &kp SINGLE_QUOTE  │   &kp MINUS    │    &kp PLUS     │  &kp LEFT_BRACE  │  &kp RIGHT_BRACE  │
+//        ├──────────┼───────────┼──────────────────┼──────────────┼───────────────┤   ├───────────────────┼────────────────┼─────────────────┼──────────────────┼───────────────────┤
+//        │  &trans  │ &kp TILDE │ &kp DOUBLE_QUOTE │ &kp QUESTION │   &kp PIPE    │   │ &kp DOUBLE_QUOTES │ &kp UNDERSCORE │    &kp EQUAL    │ &kp LEFT_BRACKET │ &kp RIGHT_BRACKET │
+//        └──────────┴───────────┼──────────────────┼──────────────┼───────────────┤   ├───────────────────┼────────────────┼─────────────────┼──────────────────┴───────────────────┘
+//                               │      &trans      │    &trans    │    &trans     │   │      &trans       │ &mo BOTH_LAYER │     &trans      │                                       
+//                               └──────────────────┴──────────────┴───────────────┘   └───────────────────┴────────────────┴─────────────────┘                                       
+      &kp EXCL   &kp AT      &kp HASH           &kp DOLLAR     &kp PRCNT           &kp CARET           &kp AMPS         &kp KP_MULTIPLY   &kp LPAR           &kp RPAR         
+      &kp TAB    &kp GRAVE   &kp SINGLE_QUOTE   &kp SLASH      &kp BACKSLASH       &kp SINGLE_QUOTE    &kp MINUS        &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  
+      &trans     &kp TILDE   &kp DOUBLE_QUOTE   &kp QUESTION   &kp PIPE            &kp DOUBLE_QUOTES   &kp UNDERSCORE   &kp EQUAL         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+                             &trans             &trans         &trans              &trans              &mo BOTH_LAYER   &trans                                                
                         >;
                 };
 
@@ -118,7 +118,7 @@
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
+        : zed_em_kay {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
